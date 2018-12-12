@@ -1,0 +1,366 @@
+body{
+    background: rgba(0,9,48,1);
+    background: -moz-linear-gradient(-45deg, rgba(0,9,48,1) 0%, rgba(44,63,186,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0,9,48,1)), color-stop(100%, rgba(44,63,186,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(0,9,48,1) 0%, rgba(44,63,186,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(0,9,48,1) 0%, rgba(44,63,186,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(0,9,48,1) 0%, rgba(44,63,186,1) 100%);
+    background: linear-gradient(135deg, rgba(0,9,48,1) 0%, rgba(44,63,186,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000930', endColorstr='#2c3fba', GradientType=1 );
+    width: 100%;
+    background-position: center;
+    height: auto;
+   
+}
+
+.main-container{
+    width: 70%;
+    height: 850px;
+    margin: 0 auto;
+    background: #15142d;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 27px 0px rgba(50, 50, 50, 0.69);
+    -moz-box-shadow:    0px 0px 27px 0px rgba(50, 50, 50, 0.69);
+    box-shadow:         0px 0px 27px 0px rgba(50, 50, 50, 0.69);
+    
+}
+
+.jumbotronStyle{
+    margin-bottom: 0px;
+    background-image: url(imgs/night-mountain-wallpapers-images-For-Desktop-Wallpaper.jpg);
+    background-position: 0% 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: rgb(47, 47, 47) 0.2em 0.2em 0.2em;
+    width: 100%;
+    z-index: -1;
+}    
+
+.titleApp{
+    text-align: center;
+    text-shadow: rgb(47, 47, 47) 0.1em 0.1em 0.1em;
+}
+
+    .jumbotronStyle h2{
+        font-size: 1.5em;
+    }
+   
+
+/*Hours and minutes input */
+.hourTimeSt {
+    width: 100%;
+    margin: 0 auto;
+}  
+
+    label{
+        color: #fff;
+        font-weight: 300;
+        font-family: 'Dosis', sans-serif;  
+    }
+
+
+    .hourTimeSt #hoursInput,
+    .hourTimeSt #minutesInput{
+        background:hsl(242, 100%, 15%, .5);
+        color: #fff;
+        border: none;
+        font-size: 1.5em; 
+        font-family: 'Dosis', sans-serif;
+        width: 100%;
+        font-weight: 300;
+    }
+
+
+  /* Song choice */
+.songInput{
+    margin-top: 30px; 
+}
+
+#soch{
+    background:hsl(242, 100%, 15%, .5);
+    color: #fff;
+    border: none;
+    font-family: 'Dosis', sans-serif;
+    width: 100%; 
+}
+
+    #soch::placeholder{
+        color: #fff;
+        font-family: 'Dosis', sans-serif;
+    }
+
+/* Location and destination */
+#locDest{
+    margin-top: 30px;
+}
+
+    .destination{
+        margin-top: 20px;  
+    }
+
+    .destination input{
+        border: 1px solid  rgb(255, 140, 0);
+        background: transparent;
+        color: #fff;
+        font-family: 'Dosis', sans-serif;
+        font-weight: lighter;
+    }
+
+        .destination input::placeholder{
+            color: #fff;
+            font-family: 'Dosis', sans-serif;
+            font-weight: lighter;
+        }
+        
+        .destination input:focus{
+            background: #746f96;
+            color: rgb(255, 255, 255);
+            font-family: 'Dosis', sans-serif;
+            font-weight: lighter;
+        }
+
+
+
+/*Submit stuff*/
+.submitingStuff{
+    margin-top: 20px;
+}
+
+    .submitingStuff button{
+        margin-top: 10px;
+    }
+
+    #clockSet{
+        background:#e0530d;
+        border: none;
+        border-radius: 50px;
+        font-family: 'Dosis', sans-serif;
+        font-weight: 500;
+        height: 40px;
+        width: 100%;
+        color: rgb(14, 14, 28);
+        -webkit-box-shadow: 0px 0px 27px 0px rgba(50, 50, 50, 0.69);
+        -moz-box-shadow:    0px 0px 27px 0px rgba(50, 50, 50, 0.69);
+        box-shadow:         0px 0px 27px 0px rgba(50, 50, 50, 0.69);
+
+    }
+
+    #go{
+        background: rgb(79, 79, 198);
+        border: none;
+        font-family: 'Dosis', sans-serif;
+        font-weight: 500;
+    }
+
+    .snooze_{
+        background:#fff200;
+        border: none;
+        border-radius: 5px;
+        font-family: 'Dosis', sans-serif;
+        font-weight: 500;
+        height: 40px;
+        width: 100%;
+        color: rgb(14, 14, 28);
+      
+    }
+
+/*Stop alarm button*/
+.stopAlarm{
+    background: rgb(255, 140, 0);
+    border: none;
+    color: #15142d;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    height: 50px;
+}    
+
+/*Inspiration quote*/
+.inspireQuote{
+    background: rgb(14, 14, 30);
+}
+
+    .header_division{
+        border: none;
+    }
+
+    .header_division .close{
+        text-shadow: none;
+        color: rgb(255, 140, 0);
+    }
+
+#quoteOfDay{
+    font-size: 1.7em;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    color: rgb(176, 176, 176);
+}    
+
+    #author{
+        font-family: 'Dosis', sans-serif;
+        font-weight: 500;
+        color: rgb(134, 134, 134);  
+    }
+
+.readyToWake{
+    background: rgb(200, 110, 20);
+    padding-bottom: 10px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    color:#000;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+}    
+
+/*Directions*/
+.header_directions{
+    color: #fff;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+}
+
+.directions_style{
+    font-size: 1em;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    color: rgb(176, 176, 176);
+}
+
+.directions_close{
+    background: rgb(200, 110, 20);
+    padding-bottom: 10px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    color:#000;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    font-size: 1em; 
+    width: 100px;
+}
+
+
+
+
+/* ==============================================
+============ REAL TIME CLOCK ==================*/
+
+  
+  .alarm-clock {
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto;
+    
+  }
+  .alarm-clock .date {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    transform: translateX(-50%);
+    z-index: 9;
+    font-family: 'Dosis', sans-serif;
+    
+  }
+  .alarm-clock .time {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10 10px;
+    background:hsl(242, 100%, 15%, .5);
+    border-radius: 10px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 52px;
+    
+  }
+  .alarm-clock .time span {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #e1e73c;
+    text-shadow: 0 0 15px rgba(231, 76, 60, 0.4);
+    line-height: 1.75;
+  }
+  .alarm-clock .time span:nth-of-type(5) {
+    width: 90px;
+  }
+  .alarm-clock .time span.colon {
+    width: 12px;
+    text-align: center;
+    animation: blink 2s infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+/* ==============================================
+============ REAL TIME CLOCK END ==================*/
+
+
+
+
+
+
+/*Media queries*/
+/*Extra small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 400px) {
+    .main-container{
+        width: 100%;
+    }        
+    #soch{
+        width: 90%;
+        margin: 0 auto;
+    }
+  
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .main-container{
+        width: 70%;
+    }
+   
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    .main-container{
+        width: 70%;
+    }
+   
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    .main-container{
+        width: 70%;
+    }
+ }
+
+
+ 

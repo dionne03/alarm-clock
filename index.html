@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Wakey Wakey</title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300,500" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+    <div class="main-container"> <!--Main containter-->
+        <div id="wakeywakey" class="jumbotron jumbotron-fluid jumbotronStyle" > <!-- Alarm Clock settings -->
+            <h1 class="titleApp">Wakey wakey</h1>
+            <div class="alarm-clock">
+                    <div class="date">
+                        <span class="month"></span>
+                        <span class="day"></span>,
+                        <span class="year"></span>
+                    </div>
+            
+                    <div class="time">
+                        <span class="hours"></span>
+                        <span class="colon">:</span>
+                        <span class="minutes"></span>
+                        <span class="colon">:</span>
+                        <span class="seconds"></span>
+                    </div>
+                </div>
+            <br>
+            <form>
+                <div class="row hourTimeSt container">
+                    
+                    <div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3 ">
+                    </div>
+                    
+                    <div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3"> <!-- hours-->
+                        <label for="hoursInput"><h2>HOUR</h2></label>
+                        <select class="form-control" id="hoursInput">
+                        </select>
+                    </div>
+                    
+                    <div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3 "> <!-- MInutes -->
+                        <label for="minutesInput"><h2>MINUTES</h2></label>
+                        <select class="form-control" id="minutesInput">
+                        </select>
+                    </div>
+                    
+                    <div class="col col-lg-3 col-md-3 col-sm-3 col-xs-3 ">
+                    </div>
+                    
+                </div>
+
+                <div class="row">
+                        <div class="col col-lg-6 col-md-6  col-sm-6 offset-md-3 offset-sm-3 box songInput"> <!-- Song choice -->
+                            <!--<label for="soch"><p>SONG CHOICE</p></label>-->
+                            <input type="text" class="form-control" id="soch" placeholder="Song Choice">
+                        </div>
+                    </div>
+                    <div class="col col-lg-6 col-md-6  col-sm-6 offset-md-3 offset-sm-3 box songInput">
+                    <button type="submit" id="clockSet" class="btn btn-primary btn-sm">Submit alarm</button>   
+                    </div>
+            </form>
+        </div>   <!-- Alarm Clock Setting END -->      
+
+        <div id="locDest" class="container"> <!-- Destination-->
+            <form>
+                <div class="col destination">
+                    <!--<label for="yolo">Your Location</label>-->
+                    <input type="text" class="form-control" id="yolo" placeholder="Your location">
+                </div>
+                <div class="col destination">
+                    <!--<label >for="dest">Destination</label>-->
+                    <input type="text" class="form-control" id="dest" placeholder="Your destination">
+                </div>
+                <div class="col submitingStuff">
+                    <button type="submit" id="go" class="btn btn-primary btn-sm btn-block" data-toggle="modal" data-target="#exampleModalLong">Go</button>
+                    <button type="submit" id="snooze-button" class="btn btn-primary snooze_">Snooze</button>
+                    <button type="submit" id="stop-button" class="btn btn-primary btn-sm btn-block stopAlarm" data-toggle="modal" data-target="#exampleModalCenter">Stop alarm</button>
+                </div>
+            </form>
+        </div> <!-- Destination ends-->
+        <!-- Modal INSPIRATION QUOTE -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content inspireQuote">
+                    <div class="modal-header header_division" >
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">X</span>
+                        </button>
+                    </div>
+                    <div class="modal-body quote_button"> <!-- Quote of the day -->
+                        <h2 id="quoteOfDay" class="display-4"></h2>
+                        <p id="author" class="lead"></p>
+                        <button type="button" class="btn btn-secondary readyToWake" data-dismiss="modal">I am ready to have a great day</button>
+                    </div> <!-- Quote of the day END -->
+
+                    <div class="modal-footer header_division"></div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div><!-- Modal INSPIRATION QUOTE ENDS -->
+
+        <!-- Directions -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content inspireQuote">
+                    <div class="modal-header header_division">
+                        <h5 class="modal-title header_directions" id="exampleModalLongTitle">How to get there</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="dir" class="directions_style"></div>
+                    </div>
+                    <div class="modal-footer header_division">
+                        <button type="button" class="btn btn-secondary directions_close" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                
+              </form>
+              <div id="song-info">
+                  <div id="play-display">
+                  </div>
+              </div>
+              <div id="dir"></div>
+
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src = 'https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.min.js'></script>
+    <script src = "assets/javascript/victor.js"></script>
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+    <script src=“https://cdn.jsdelivr.net/momentjs/2.14.1/moment-with-locales.min.js“></script>
+    <script>
+        window.onSpotifyWebPlaybackSDKReady = () => {
+          // You can now initialize Spotify.Player and use the SDK
+        };
+        </script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <!-- <script>
+        SC.initialize({
+          client_id: 'YOUR_CLIENT_ID',
+          redirect_uri: 'callback.html'
+        });
+    </script> -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js'></script>
+    <script src="hourMin.js"></script>
+    <script src="clockApp.js"></script>
+    <script src="quote.js"></script>
+  
+    
+    
+</body>
+</html>
